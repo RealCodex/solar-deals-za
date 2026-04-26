@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SA Solar Deals — Top 5 Installers</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <span class="sun" aria-hidden="true"></span>
+      <h1>SA Solar Deals</h1>
+    </div>
+    <p class="lede">Live snapshot of the deals and specials running at South Africa's top 5 residential solar installers.</p>
+    <div class="meta">
+      <span id="last-updated" class="pill">Loading…</span>
+      <span id="next-refresh" class="pill subtle"></span>
+    </div>
+  </div>
+</header>
+
+<nav class="filters wrap" aria-label="Filter by company">
+  <button class="chip active" data-filter="all">All</button>
+  <!-- chips injected by app.js -->
+</nav>
+
+<main id="companies" class="wrap"></main>
+
+<footer class="wrap">
+  <details>
+    <summary>Research sources</summary>
+    <ul id="research-sources"></ul>
+  </details>
+  <p class="fineprint">
+    Pricing is collected from each installer's own published pages and reseller listings. Always confirm current pricing and availability with the company before signing — promotions and packages change.
+  </p>
+</footer>
+
+<script src="data/deals.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
